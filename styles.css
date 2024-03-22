@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+body main {
+  width: min(95%, 375px);
+  height: 800px;
+  background-color: #684BB1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main svg {
+  width: 120px;
+}
+body main img {
+  width: 296px;
+  height: 209px;
+}
+body main article {
+  padding: 0 42px;
+  text-align: center;
+}
+body main article h1 {
+  color: white;
+}
+body main article p {
+  color: white;
+  font-weight: 200;
+}
+body main article button {
+  width: 200px;
+  height: 40px;
+  border-radius: 2rem;
+  border: 0;
+}
+body main footer {
+  display: flex;
+  flex-direction: row;
+}
+body main footer div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+body main footer div .fa-brands {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
