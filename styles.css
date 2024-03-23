@@ -1,7 +1,7 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body main {
   width: min(95%, 375px);
@@ -10,41 +10,98 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
 }
 body main svg {
   width: 120px;
+  margin-top: 1rem;
+  margin-left: -11rem;
 }
 body main img {
   width: 296px;
   height: 209px;
+  margin-top: 4rem;
 }
-body main article {
-  padding: 0 42px;
+body main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section article {
+  padding: 0 30px;
   text-align: center;
+  margin-top: 2rem;
 }
-body main article h1 {
+body main section article h1 {
   color: white;
 }
-body main article p {
+body main section article p {
   color: white;
   font-weight: 200;
 }
-body main article button {
+body main section article button {
   width: 200px;
   height: 40px;
   border-radius: 2rem;
   border: 0;
+  color: hsl(257, 40%, 49%);
+  margin-top: 1rem;
 }
 body main footer {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 body main footer div {
   width: 30px;
   height: 30px;
   border: 1px solid white;
   border-radius: 50%;
+  margin: 0 8px;
 }
 body main footer div .fa-brands {
   color: white;
+  position: relative;
+  top: 4px;
+  left: 8px;
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 1440px;
+    background-image: url("images/bg-desktop.svg");
+  }
+  body main svg {
+    width: 200px;
+    position: relative;
+    right: 28rem;
+    top: 4rem;
+  }
+  body main section {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+  body main section img {
+    width: 696px;
+    height: 493px;
+  }
+  body main section article {
+    width: 525px;
+    height: 450px;
+    text-align: left;
+  }
+  body main section article h1 {
+    font-size: 2.5rem;
+  }
+  body main section article p {
+    font-size: 1.125rem;
+  }
+  body main section article button {
+    height: 56px;
+    font-size: 1.125rem;
+  }
+  body main footer div {
+    position: relative;
+    left: 35rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

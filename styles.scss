@@ -1,8 +1,12 @@
+$violet: hsl(257, 40%, 49%);
+$softMagenta: hsl(300, 69%, 71%);
+
 body {
 
     display: flex;
     justify-content: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+
     
 
     main {
@@ -13,65 +17,143 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-image: url("images/bg-mobile.svg");
+        background-repeat: no-repeat;
         
 
         svg {
             width: 120px;
+            margin-top: 1rem;
+            margin-left: -11rem;
             
         }
 
         img {
             width: 296px;
             height: 209px;
+            margin-top: 4rem;
         }
 
-        article {
+        section {
 
-            padding: 0 42px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            text-align: center;
+            article {
 
-            h1 {
-                color: white;
-            }
-
-            p{
-                color: white;
-                font-weight: 200;
+                padding: 0 30px;
+                text-align: center;
+                margin-top: 2rem;
+    
+                h1 {
+                    color: white;
+                }
+    
+                p{
+                    color: white;
+                    font-weight: 200;
+                    
+                }
+    
+                
+    
+                button {
+    
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 2rem;
+                    border: 0;
+                    color: $violet;
+                    margin-top: 1rem;
+                }
+    
                 
             }
-
-            
-
-            button {
-
-                width: 200px;
-                height: 40px;
-                border-radius: 2rem;
-                border: 0;
-            }
-
-            
         }
 
         footer {
             display: flex;
             flex-direction: row;
+            margin-top: 2rem;
+            
 
             div {
                 width: 30px;
                 height: 30px;
                 border: 1px solid white;
                 border-radius: 50%;
+                margin: 0 8px;
                 
 
                 .fa-brands {
                     color: white;
+                    position: relative;
+                    top: 4px;
+                    left: 8px;
+                    
                     
                 }
             }
         }
 
 
+    }
+
+    @media screen and (min-width: 1440px){
+
+        main {
+
+            width: 1440px;
+            background-image: url("images/bg-desktop.svg");
+
+            svg {
+                width: 200px;
+                position: relative;
+                right: 28rem;
+                top: 4rem;
+            }
+            
+            section {
+
+                flex-direction: row;
+                margin-top: 3rem;
+                
+
+                img {
+                    width: 696px;
+                    height: 493px;
+                }
+
+                article {
+                    width: 525px;
+                    height: 450px;
+                    text-align: left;
+
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.125rem;
+                    }
+
+                    button {
+
+                        height: 56px;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+
+            footer {
+
+                div {
+                    position: relative;
+                    left: 35rem;
+                }
+            }
+        }
+        
     }
 }
